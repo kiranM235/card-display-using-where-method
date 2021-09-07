@@ -1,0 +1,33 @@
+void main () {
+  String name = "Kiran";
+  // initialize the name variable
+  
+  String? initial = getInitialName(name);
+  
+  String address = null ?? "Siddhipur";
+  
+//   print(address);
+  
+  Person? person = new Person("Kiran");
+  
+//   person = null;
+  
+  person?.printName();
+}
+
+String? getInitialName (String? name) {
+  return name!.substring(0,2);
+  
+}
+
+class Person {
+  String firstName;
+  
+  Person(this.firstName);
+  
+  void printName() {
+    
+    print(firstName);
+
+  }
+}
