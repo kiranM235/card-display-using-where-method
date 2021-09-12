@@ -1,0 +1,19 @@
+void main() {
+  
+  var person = Person("Kiran");
+  
+  person.printName();
+  
+  }
+
+class Person {
+  
+  String firstName;
+  
+  Person(this.firstName);
+  
+  void printName() {
+    print(this.firstName);
+    
+  }
+}
