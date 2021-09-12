@@ -1,0 +1,241 @@
+void main() {
+  
+  var name = getName();
+  
+  var len = name.length;
+
+  print(name);
+  
+  print(len);
+  
+}
+
+String getName() {
+  
+  return "Kiran";
+  
+}
+  
+  
+//or below one still output same
+
+  void main() {
+  
+  var name = getName();
+  
+  var len = name.length;
+
+  print(name);
+  
+  print(len);
+  
+}
+
+getName() {
+  
+  return "Kiran";
+  
+}
+
+
+// or down below output same 
+
+
+void main() {
+  
+  var name = getName();
+  
+  var len = name.length;
+
+  print("my name is $name");
+  
+  print(len);
+  
+}
+
+getName() {
+  
+  return "Kiran";
+  
+}
+  
+  
+
+//or 
+
+
+void main() {
+  
+  var name = getName();
+
+  print("my name is $name");
+  
+ }
+
+getName() {
+  
+  return "Kiran";
+  
+}
+  
+  
+//or
+
+void main() {
+  
+  var name = getName();
+
+  print("my name is ${name.length}");
+  
+ }
+
+getName() {
+  
+  return "Kiran";
+  
+}
+  
+  
+//or
+
+
+void main() {
+  
+  var person = new Person();
+
+  person.firstName = "Kiran";
+  
+  person.printName();
+  
+}
+
+class Person {
+  
+  String firstName;
+  
+  void printName() {
+    
+    print(firstName);
+  
+  }
+}
+  
+ 
+  
+//this can be droped but output will be same
+
+
+void main() {
+  
+  var person = new Person();
+
+  person.firstName = "Kiran";
+  
+  person.printName();
+  
+}
+
+class Person {
+  
+  String firstName;
+  
+  void printName() {
+    
+    print(this.firstName);
+  
+  }
+}
+  
+ 
+  
+//using constructor
+
+
+
+
+void main() {
+  
+  var person = new Person("Kiran");
+  
+  person.printName();
+  
+}
+
+class Person {
+  
+  String firstName;
+  
+  Person(String name) {
+    
+    firstName = name;
+    
+  }
+  
+  void printName() {
+    
+    print(this.firstName);
+  
+  }
+}
+  
+ 
+//in practical world it is used as shortcut and maximum we use it
+
+
+void main() {
+  
+  var person = new Person("Kiran");
+  
+  person.printName();
+  
+}
+
+class Person {
+  
+  String firstName;
+  
+  Person(this.firstName); 
+  
+  void printName() {
+    
+    print(this.firstName);
+  
+  }
+}
+  
+ 
+  
+  
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
